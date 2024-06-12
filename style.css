@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    width : 100vw;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    background: hsla(31, 90%, 76%, 1);
+    text-shadow: 2px 2px 2px grey;
+
+background: linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1 );
+}
+
+.clock {
+    box-shadow: 2px 2px 20px rgb(99, 99, 99);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+.date {
+    display: flex;
+    
+}
+
+#day {
+    margin-right: 1rem;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.time>div {
+    border: 2px solid rgb(64, 64, 64);
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 4rem;
+    text-align: right;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 650px) {
+    .clock {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .clock {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
